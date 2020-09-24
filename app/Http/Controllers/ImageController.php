@@ -50,7 +50,7 @@ class ImageController extends Controller
         $ruta_imagenes = public_path()."\imagenes\'";
         $miniatura->save($ruta_imagenes."miniatura-".$archivo_original->getClientOriginalName());
         //var_dump($miniatura);
-        return redirect('imagenes/crear')->with('exito', "Ingreso de la imagen exitosa");
+        return redirect('imagenes/crear')->with('exito', "Se agregado con exito tu imagen");
 
     }
 

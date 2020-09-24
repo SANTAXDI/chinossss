@@ -17,12 +17,12 @@ class PDFController extends Controller
         //establecer el tipo de letra 
         $pdf->SetFont('Arial','b',14);
         //Establecer un contenido
-        $pdf->SetDrawColor(0,155,0);
-        $pdf->SetTextColor(0,0,200);
+        $pdf->SetDrawColor(0,0,100);
+        $pdf->SetTextColor(0,0,50);
         $pdf->Cell(110,10,"Nombre artista",1,0,"C");
   
         $pdf->Cell(50,10,utf8_decode("Número Albumes"),1,1,"C");
-        $pdf->SetTextColor(200,0,0);
+        $pdf->SetTextColor(0,100,0);
         //Recorrer el arreglo de artista para mostrar
         //artistas y numero de disco por artistas
         $artistas= Artista::all();
